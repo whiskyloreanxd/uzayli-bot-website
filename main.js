@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const creatorsGrid = document.getElementById('creators-grid');
 
   async function fetchLanyardData() {
+    if (!creatorsGrid) return; // Güvenlik kontrolü
     try {
       creatorsGrid.innerHTML = ''; // Clear loading state
 
